@@ -1,0 +1,431 @@
+:root, [data-bs-theme=light] {
+    --bs-primary: #9a6734;
+}
+.btn {
+    text-transform: uppercase;
+}
+.btn-primary {
+    --bs-btn-bg: #9a6734;
+    --bs-btn-border-color: #9a6734;
+    --bs-btn-hover-bg: #94591e;
+    --bs-btn-hover-border-color: #84501c;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-bg: #84501c;
+    --bs-btn-active-border-color: #6d4114;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-bg: #9a6734;
+    --bs-btn-disabled-border-color: #9a6734;
+}
+
+.btn-secondary {
+    --bs-btn-color: #9a6734;
+    --bs-btn-bg: #ccb399;
+    --bs-btn-border-color: #ccb399;
+    --bs-btn-hover-color: #9a6734;
+    --bs-btn-hover-bg: #ceb399;
+    --bs-btn-hover-border-color: #d1a87e;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #9a6734;
+    --bs-btn-active-bg: #d1a87e;
+    --bs-btn-active-border-color: #cb9a6a;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #9a6734;
+    --bs-btn-disabled-bg: #ccb399;
+    --bs-btn-disabled-border-color: #ccb399;
+}
+
+body {
+    color: #9a6734;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.p, p {
+    margin: 0;
+}
+
+.titulo-area {
+    font-size: 1.750rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: rgb(154 103 52);
+}
+
+.header {
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+.scrolled .header {
+    background-color: rgba(154, 103, 52, 0.9);
+}
+
+/* HOME */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9a6734;
+}
+
+.home:before {
+    content: "";
+    background: 
+    color-mix(in srgb, #9a6734, transparent 25%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+.home video {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.home .container {
+    color: #fff;
+    position: relative;
+    z-index: 3;
+}
+
+[data-video-home] {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+#sobre {
+    margin-bottom: 5rem;
+}
+
+/* MOSAICO */
+.mosaic {
+    display: flex;
+    flex-wrap: wrap;
+}
+.mosaic-item {
+    font-family: "Montserrat", sans-serif;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: #9a6734;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+.mosaic-content {
+    padding: 10px;
+    position: relative;
+    z-index: 3;
+}
+.mosaic-content h4 {
+    font-size: 4rem;
+}
+.mosaic-content p {
+    font-size: 1.125rem;
+}
+
+/* MOSAICO DE SOBRE */
+.mosaic-about .mosaic-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.mosaic-about .mosaic-content p {
+    font-size: .75rem;
+    color: #ccb399;
+}
+
+
+/* MOSAICO DE SERVIÇOS */
+.mosaic-services .mosaic-item:before {
+    content: "";
+    background: 
+    color-mix(in srgb, #9a6734, transparent 25%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+
+/* Servicos */
+#servicos {
+    margin-bottom: 5rem;
+}
+
+.servicos-base {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #9a6734;
+    color: #ffffff;
+}
+
+    .servicos-base p {
+        color: #ccb399;
+    }
+
+/* Profissionais */
+#profissionais {
+margin-bottom: 5rem;
+}
+
+#profissionais .slick-item {
+    padding: 0 10px;
+}
+
+#profissionais .slick-item > img {
+    display: block;
+    width: 100%;
+}
+
+/* Cartão Contato */
+#cartao-contato {
+    padding: 2rem 0;
+    margin-bottom: 5rem;
+    background-color: #9a6734;
+    color: #ffffff;
+}
+
+.cartao-contato-info {
+    display: flex;
+}
+
+.cartao-contato-icone {
+    color: #ccb399;
+}
+
+.cartao-contato-conteudo {
+    font-family: "Montserrat", sans-serif;
+    margin-left: .75rem;
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: .75rem;
+}
+
+.cartao-contato-conteudo span {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #ccb399;
+    text-transform: uppercase;
+}
+
+
+/* Palavra da CEO */
+#palavra-da-ceo {
+    margin-bottom: 6rem;
+}
+
+#palavra-da-ceo p {
+    font-family: "Montserrat", sans-serif;
+    color: #392716;
+}
+
+/* Agenda (Atendimento) */
+#agenda {
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+    .btn-atendimento {
+        line-height: 2;
+    }
+        .btn-atendimento .bi {
+            vertical-align: middle;
+        }
+
+/* Contato */
+#contato {
+    background: linear-gradient(rgba(154, 103, 52, 0.75), rgba(154, 103, 52, 0.75)), url(../images/contato-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 2rem;
+    position: relative;
+}
+
+#form-contato {
+    background-color: #9a6734;
+    color: #ffffff;
+    border-radius: 1.125rem;
+    position: relative;
+    margin-bottom: -1rem;
+}
+
+.contato-base {
+    background-color: #ccb399;
+}
+
+section, .section {
+    scroll-margin-top: 72px;
+    overflow: clip;
+}
+
+/* Rodapé */
+#rodape {
+    background-color: #9a6734;
+    color: #ccb399;
+    padding: 4rem 0 2rem;
+    position: relative;
+    font-size: 16px;
+}
+
+#rodape ul {
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#rodape h5 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+}
+
+#rodape ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+@media (min-width: 576px) {   
+
+    .titulo-area {
+        font-size: 2.813rem;
+    }
+
+    .mosaic-about .mosaic-content h4 {
+        font-size: 1.75rem;
+    }
+    .mosaic-about .mosaic-content p {
+        font-size: 1.125rem;
+    }    
+}
+
+@media (min-width: 768px) {
+
+    /**
+     * Mosaico Serviços
+     */
+    .mosaic-services .mosaic-content h4 {
+        font-size: 3rem;
+    }
+    .mosaic-services .mosaic-content p {
+        font-size: .8rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /**
+     * Mosaico Sobre
+     */
+    .mosaic-about .mosaic-content h4 {
+        font-size: 1.75rem;
+    }
+    .mosaic-about .mosaic-content p {
+        font-size: 1.125rem;
+    }
+
+    /**
+     * Mosaico Serviços
+     */
+    .mosaic-services .mosaic-content {
+        padding: 20px;
+    }
+    .mosaic-services .mosaic-content p {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /**
+     * Mosaico Sobre
+     */
+    .mosaic-about .mosaic-content{
+        padding: 40px;
+    }
+    .mosaic-about .mosaic-content h4 {
+        font-size: 2rem;
+    }
+    .mosaic-about .mosaic-content p {
+        font-size: 1.375rem;
+    }
+
+    /**
+     * Mosaico Serviços
+     */
+    .mosaic-services .mosaic-content {
+        padding: 40px;
+    }
+}
+
+
+
+
+@media (min-width: 1400px) {
+
+    .menu-turquesa>.nav-item {
+        position: relative;
+    }
+    .menu-turquesa>.nav-item>.nav-link {
+        font-size: 20px;
+        color: color-mix(in srgb, #ffffff, transparent 30%);
+    }
+    .menu-turquesa>.nav-item>.nav-link.active,
+    .menu-turquesa>.nav-item>.nav-link.show {
+        color: #ffffff;
+    }
+    .menu-turquesa>.nav-item>.nav-link:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        bottom: 0px;
+        left: 0;
+        background-color: #12a0b2;
+        visibility: hidden;
+        width: 0px;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    .menu-turquesa>.nav-item>.nav-link:hover:before,
+    .menu-turquesa>.nav-item:hover>.nav-link:before,
+    .menu-turquesa>.nav-item>.nav-link.active:before {
+        visibility: visible;
+        width: 100%;
+    }
+
+
+    .mosaic-about .mosaic-content h4 {
+        font-size: 2rem;
+    }
+
+    .mosaic-services .mosaic-content h4 {
+        font-size: 4rem;
+    }
+}
+

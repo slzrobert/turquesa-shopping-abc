@@ -1,5 +1,3 @@
-# Web Site Mr. Drink SLZ
+# Web Site Turquesa Esmalteria e Beleza - Shopping ABC
 
-Este projeto tem por objetivo a venda online de bebidas. 
-
-**Acesse**: [www.mrdrinkslz.com.br](www.mrdrinkslz.com.br)
+**Acesse**: [https://turquesashoppingabc.com.br/](turquesashoppingabc.com.br)

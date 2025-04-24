@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Turquesa Esmalteria e Beleza - Shopping ABC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap">
+
+    <link rel="stylesheet" href="/assets/vendor/bootstrap-5.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/vendor/animate-3.5.2/animate.min.css">
+    <link rel="stylesheet" href="/assets/vendor/slick-1.8/slick.css">
+    <link rel="stylesheet" href="/assets/vendor/slick-1.8/slick-theme.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+<body class="page">
+
+    <header id="header" class="header navbar navbar-expand-lg d-flex align-items-center fixed-top">
+        <nav class="container position-relative d-flex align-items-center">
+
+            <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMenuTurquesa" aria-controls="navMenuTurquesa" aria-label="Toggle docs navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                </svg>
+                <span class="d-none fs-6 pe-1">Browse</span>
+            </button>
+
+            <div id="navMenuTurquesa" class="offcanvas-lg offcanvas-end flex-grow-1">
+                <div class="offcanvas-body">
+                    <ul class="menu-turquesa navbar-nav flex-row flex-wrap">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#servicos" class="nav-link">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#profissionais" class="nav-link">Profissionais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#agenda" class="nav-link">Agendamento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#whats" target="_blank" rel="noopener">
+                                <i class="bi bi-whatsapp"></i>
+                                <small class="d-lg-none">Whatsapp</small>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#whats" target="_blank" rel="noopener">
+                                <i class="bi bi-facebook"></i>
+                                <small class="d-lg-none">Facebook</small>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#whats" target="_blank" rel="noopener">
+                                <i class="bi bi-instagram"></i>
+                                <small class="d-lg-none">Instagram</small>
+                            </a>
+                        </li>                        
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main">
+
+        <section id="home" class="home">
+            <video data-video-home autoplay muted loop>
+                <!--<source src="meuVideo.webm" type="video/webm" / -->
+                <source src="assets/videos/fachada.mp4" type="video/mp4" />
+            </video>
+            <div class="container d-flex flex-column align-items-center text-center">
+                
+                <picture class="wow fadeIn" data-wow-delay="0.2s">
+                    <source srcset="assets/images/logos/logo.webp" media="(min-width: 800px) and (min-height: 640px)">
+                    <source srcset="assets/images/logos/logo-600.webp" media="(min-width: 640px) and (min-height: 540px)">
+                    <source srcset="assets/images/logos/logo-500.webp" media="(min-width: 540px) and (min-height: 440px)">
+                    <source srcset="assets/images/logos/logo-400.webp" media="(min-width: 440px) and (min-height: 340px)">
+                    <source srcset="assets/images/logos/logo-300.webp" media="(min-width: 340px) and (min-height: 240px)">
+                    <source srcset="assets/images/logos/logo-200.webp" media="(min-width: 240px) and (min-height: 140px)">
+                    <img src="assets/images/logos/logo-200.webp">
+                </picture>
+
+            </div>
+        </section>
+
+        <section id="sobre">
+
+            <div class="mosaic mosaic-about">
+                <div class="mosaic-item order-0 order-md-0 wow fadeInLeft" data-wow-offset="100" data-wow-delay="0.2s">
+                    <div class="mosaic-content">
+                        <h4>+2 Mil Cores de Esmaltes</h4>
+                        <p>Nenhuma esmalteria da região oferece essa variedade.</p>
+                    </div>
+                </div>
+                <div class="mosaic-item order-1 order-md-1 wow fadeInRight" data-wow-offset="100" data-wow-delay="0.2s" style="background-image: url('assets/images/sobre/mosaic-foto-1.png');"></div>                
+                <div class="mosaic-item order-3 order-md-2 wow fadeInLeft" data-wow-offset="100" data-wow-delay="0.2s">
+                    <div class="mosaic-content">
+                        <h4>Atendimento Multiplos Porfissionais</h4>
+                        <p>A Sua Beleza transformada por mais de um profissional ao mesmo tempo!</p>
+                    </div>
+                </div>
+                <div class="mosaic-item order-5 order-md-3 wow fadeInRight" data-wow-offset="100" data-wow-delay="0.2s" style="background-image: url('assets/images/sobre/mosaic-foto-3.jpg');"></div>
+                <div class="mosaic-item order-4 order-md-4 wow fadeInLeft" data-wow-offset="100" data-wow-delay="0.2s">
+                    <div class="mosaic-content">
+                        <h4>Profissionais Certificados</h4>
+                        <p>Todas as profissionais passam por treinamento e são certificadas.</p>
+                    </div>
+                </div>
+                <div class="mosaic-item order-2 order-md-5 wow fadeInLeft" data-wow-offset="100" data-wow-delay="0.2s" style="background-image: url('assets/images/sobre/mosaic-foto-2.jpg');"></div>
+            </div>
+
+        </section>
+
+        <section id="servicos">
+
+            <h2 class="titulo-area">Serviços</h2>
+
+            <div class="mosaic mosaic-services">
+                <div class="mosaic-item wow fadeInLeft" data-wow-delay="0.2s" style="background-image: url('/assets/images/servico/service-foto-1.jpg');">
+                    <div class="mosaic-content">
+                        <h4>Unhas</h4>
+                        <p>Alongamentos de Unhas, Manicure, Pedicure, Esmaltação em Gel, Blindagem de Unhas, SPA das mãos e dos pés, Nail art e muito mais.</p>
+                    </div>
+                </div>               
+                <div class="mosaic-item wow fadeInUp" data-wow-delay="0.4s" style="background-image: url('/assets/images/servico/service-foto-2.jpeg');">
+                    <div class="mosaic-content">
+                        <h4>Olhar</h4>
+                        <p>Microblading, Micropigmentação, Alongamento de Cílios, Design de Sobrancelhas e muito mais.</p>
+                    </div>
+                </div>
+                <div class="mosaic-item wow fadeInRight" data-wow-delay="0.2s" style="background-image: url('/assets/images/servico/service-foto-3.jpeg');">
+                    <div class="mosaic-content">
+                        <h4>Cabelo</h4>
+                        <p>Deixe seu cabelo do jeito que você quer nas nossas unidades da Turquesa. Você contará com profissionais especializados em diversos cabelos e penteados para cuidar de você!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="servicos-base">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 m-auto">
+                            <h2>Os Melhores Serviços De Esmalteria e+</h2>
+                            <p class="fs-4">Na Turquesa Esmalteria & Beleza Shopping ABC, você encontra tudo o que precisa para se sentir linda e renovada em um único lugar!</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+
+        <section id="profissionais">
+            <h2 class="titulo-area">Nossos Profissionais</h2>
+            <div class="container">
+                <div class="slick-team">
+                    <div>
+                        <div class="slick-item">
+                            <img src="assets/images/profissionais/p1.png" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slick-item">
+                            <img src="assets/images/profissionais/p2.png" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slick-item">
+                            <img src="assets/images/profissionais/p3.png" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slick-item">
+                            <img src="assets/images/profissionais/p4.png" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slick-item">
+                            <img src="assets/images/profissionais/p5.png" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slick-item">
+                            <img src="assets/images/profissionais/p6.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cartao-contato">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-12 col-sm-4">
+                        <div class="cartao-contato-info">
+                            <div class="cartao-contato-icone">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" zoomAndPan="magnify" fill="currentColor" viewBox="0 0 48.75 48.75" height="65" preserveAspectRatio="xMidYMid meet" version="1.0">
+                                    <defs>
+                                        <clipPath id="2184ea9a01">
+                                            <path d="M 0 0 L 48.304688 0 L 48.304688 48.304688 L 0 48.304688 Z M 0 0 " clip-rule="nonzero"/>
+                                        </clipPath>
+                                        <clipPath id="40b5a35eed">
+                                            <path d="M 24.152344 0 C 10.8125 0 0 10.8125 0 24.152344 C 0 37.488281 10.8125 48.304688 24.152344 48.304688 C 37.488281 48.304688 48.304688 37.488281 48.304688 24.152344 C 48.304688 10.8125 37.488281 0 24.152344 0 Z M 24.152344 0 " clip-rule="nonzero"/>
+                                        </clipPath>
+                                        <clipPath id="6c421b28f3">
+                                            <path d="M 13.738281 13.738281 L 34.628906 13.738281 L 34.628906 34.628906 L 13.738281 34.628906 Z M 13.738281 13.738281 " clip-rule="nonzero"/>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#2184ea9a01)">
+                                        <g clip-path="url(#40b5a35eed)">
+                                            <path stroke-linecap="butt" transform="matrix(0.746173, 0, 0, 0.746173, 0.000000000000005302, 0.0000021898)" fill="none" stroke-linejoin="miter" d="M 32.368271 -0.0000029347 C 14.490599 -0.0000029347 -0.000000000000007105 14.490596 -0.000000000000007105 32.368268 C -0.000000000000007105 50.240704 14.490599 64.736538 32.368271 64.736538 C 50.240707 64.736538 64.736541 50.240704 64.736541 32.368268 C 64.736541 14.490596 50.240707 -0.0000029347 32.368271 -0.0000029347 Z M 32.368271 -0.0000029347 " stroke="currentColor" stroke-width="4" stroke-opacity="1" stroke-miterlimit="4"/>
+                                        </g>
+                                    </g>
+                                    <g clip-path="url(#6c421b28f3)">
+                                        <path fill="currentColor" d="M 34.371094 29.074219 C 34.523438 29.480469 34.613281 29.917969 34.625 30.378906 C 34.628906 30.421875 34.628906 30.464844 34.628906 30.511719 C 34.628906 32.785156 32.785156 34.628906 30.511719 34.628906 C 21.246094 34.628906 13.738281 27.121094 13.738281 17.855469 C 13.738281 15.582031 15.582031 13.738281 17.855469 13.738281 C 17.902344 13.738281 17.945312 13.738281 17.988281 13.738281 C 18.445312 13.753906 18.886719 13.84375 19.292969 13.996094 L 20.839844 20.691406 C 20.839844 20.695312 20.839844 20.695312 20.835938 20.699219 L 18 21.972656 L 17.992188 21.976562 C 19.292969 25.9375 22.425781 29.074219 26.390625 30.375 L 26.394531 30.367188 L 27.671875 27.53125 L 34.371094 29.074219 " fill-opacity="1" fill-rule="nonzero"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="cartao-contato-conteudo">
+                                <span>Telefone:</span>
+                                <p>(11) 95323-0101</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="cartao-contato-info">
+                            <div class="cartao-contato-icone">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" zoomAndPan="magnify" fill="currentColor" viewBox="0 0 48.75 48.75" height="65" preserveAspectRatio="xMidYMid meet" version="1.0">
+                                    <defs>
+                                        <clipPath id="e7055ac5d2">
+                                            <path d="M 0 0 L 48.304688 0 L 48.304688 48.304688 L 0 48.304688 Z M 0 0 " clip-rule="nonzero"/>
+                                        </clipPath>
+                                        <clipPath id="b514b924bb">
+                                            <path d="M 24.152344 0 C 10.8125 0 0 10.8125 0 24.152344 C 0 37.488281 10.8125 48.304688 24.152344 48.304688 C 37.488281 48.304688 48.304688 37.488281 48.304688 24.152344 C 48.304688 10.8125 37.488281 0 24.152344 0 Z M 24.152344 0 " clip-rule="nonzero"/>
+                                        </clipPath>
+                                        <clipPath id="c3f0f9ec8d">
+                                            <path d="M 13 25 L 36 25 L 36 31.992188 L 13 31.992188 Z M 13 25 " clip-rule="nonzero"/>
+                                        </clipPath>
+                                        <clipPath id="31398e6c35">
+                                            <path d="M 11.9375 17 L 21 17 L 21 31 L 11.9375 31 Z M 11.9375 17 " clip-rule="nonzero"/>
+                                        </clipPath>
+                                        <clipPath id="18f79c008c">
+                                            <path d="M 13 16.320312 L 36 16.320312 L 36 26 L 13 26 Z M 13 16.320312 " clip-rule="nonzero"/>
+                                        </clipPath>
+                                        <clipPath id="de15e036db">
+                                            <path d="M 28 17 L 36.5625 17 L 36.5625 31 L 28 31 Z M 28 17 " clip-rule="nonzero"/>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#e7055ac5d2)">
+                                        <g clip-path="url(#b514b924bb)">
+                                            <path stroke-linecap="butt" transform="matrix(0.746173, 0, 0, 0.746173, 0.000000000000005302, 0.0000021898)" fill="none" stroke-linejoin="miter" d="M 32.368271 -0.0000029347 C 14.490599 -0.0000029347 -0.000000000000007105 14.490596 -0.000000000000007105 32.368268 C -0.000000000000007105 50.240704 14.490599 64.736538 32.368271 64.736538 C 50.240707 64.736538 64.736541 50.240704 64.736541 32.368268 C 64.736541 14.490596 50.240707 -0.0000029347 32.368271 -0.0000029347 Z M 32.368271 -0.0000029347 " stroke="currentColor" stroke-width="4" stroke-opacity="1" stroke-miterlimit="4"/>
+                                        </g>
+                                    </g>
+                                    <g clip-path="url(#c3f0f9ec8d)">
+                                        <path d="M 35.015625 31.703125 L 27.347656 25.335938 C 27.125 25.152344 26.800781 25.152344 26.578125 25.335938 L 24.511719 27.050781 C 24.304688 27.226562 24.003906 27.226562 23.792969 27.050781 L 21.730469 25.335938 C 21.503906 25.152344 21.179688 25.152344 20.957031 25.335938 L 13.289062 31.703125 C 13.183594 31.789062 13.246094 31.960938 13.382812 31.960938 L 34.921875 31.960938 C 35.058594 31.960938 35.121094 31.789062 35.015625 31.703125 " fill-opacity="1" fill-rule="nonzero"/>
+                                    </g>
+                                    <g clip-path="url(#31398e6c35)">
+                                        <path d="M 20 23.902344 L 12.179688 17.410156 C 12.085938 17.328125 11.941406 17.398438 11.941406 17.523438 L 11.941406 30.789062 C 11.941406 30.910156 12.085938 30.980469 12.179688 30.902344 L 20 24.410156 C 20.15625 24.277344 20.15625 24.03125 20 23.902344 " fill-opacity="1" fill-rule="nonzero"/>
+                                    </g>
+                                    <g clip-path="url(#18f79c008c)">
+                                        <path d="M 13.289062 16.605469 L 23.859375 25.382812 C 24.03125 25.523438 24.277344 25.523438 24.445312 25.382812 L 35.015625 16.605469 C 35.121094 16.519531 35.058594 16.347656 34.921875 16.347656 L 13.382812 16.347656 C 13.246094 16.347656 13.183594 16.519531 13.289062 16.605469 " fill-opacity="1" fill-rule="nonzero"/>
+                                    </g>
+                                    <g clip-path="url(#de15e036db)">
+                                        <path d="M 36.125 17.410156 L 28.308594 23.902344 C 28.148438 24.03125 28.148438 24.277344 28.308594 24.410156 L 36.125 30.902344 C 36.21875 30.980469 36.363281 30.910156 36.363281 30.789062 L 36.363281 17.523438 C 36.363281 17.398438 36.21875 17.328125 36.125 17.410156 " fill-opacity="1" fill-rule="nonzero"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="cartao-contato-conteudo">
+                                <span>E-mail:</span>
+                                <p>atendimento<abbr class="d-block d-xxl-inline">@turquesashoppingabc.com.br</abbr></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="cartao-contato-info">
+                            <div class="cartao-contato-icone">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" zoomAndPan="magnify" fill="currentColor" viewBox="0 0 48.75 48.75" height="65" preserveAspectRatio="xMidYMid meet" version="1.0">
+                                    <defs>
+                                        <clipPath id="70b57811fc">
+                                            <path d="M 0 0 L 48.304688 0 L 48.304688 48.304688 L 0 48.304688 Z M 0 0 " clip-rule="nonzero"/>
+                                        </clipPath>
+                                        <clipPath id="55cecf7a7f">
+                                            <path d="M 24.152344 0 C 10.8125 0 0 10.8125 0 24.152344 C 0 37.488281 10.8125 48.304688 24.152344 48.304688 C 37.488281 48.304688 48.304688 37.488281 48.304688 24.152344 C 48.304688 10.8125 37.488281 0 24.152344 0 Z M 24.152344 0 " clip-rule="nonzero"/>
+                                        </clipPath>
+                                        <clipPath id="96324216a4">
+                                            <path d="M 14.542969 11.339844 L 33.945312 11.339844 L 33.945312 36.710938 L 14.542969 36.710938 Z M 14.542969 11.339844 " clip-rule="nonzero"/>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#70b57811fc)">
+                                        <g clip-path="url(#55cecf7a7f)">
+                                            <path stroke-linecap="butt" transform="matrix(0.746173, 0, 0, 0.746173, 0.000000000000005302, 0.0000021898)" fill="none" stroke-linejoin="miter" d="M 32.368271 -0.0000029347 C 14.490599 -0.0000029347 -0.000000000000007105 14.490596 -0.000000000000007105 32.368268 C -0.000000000000007105 50.240704 14.490599 64.736538 32.368271 64.736538 C 50.240707 64.736538 64.736541 50.240704 64.736541 32.368268 C 64.736541 14.490596 50.240707 -0.0000029347 32.368271 -0.0000029347 Z M 32.368271 -0.0000029347 " stroke="currentColor" stroke-width="4" stroke-opacity="1" stroke-miterlimit="4"/>
+                                        </g>
+                                    </g>
+                                    <g clip-path="url(#96324216a4)">
+                                        <path d="M 24.246094 11.34375 C 18.894531 11.34375 14.542969 15.609375 14.542969 20.855469 C 14.542969 27.449219 23.300781 36.109375 23.671875 36.476562 C 23.832031 36.628906 24.039062 36.707031 24.246094 36.707031 C 24.453125 36.707031 24.660156 36.628906 24.816406 36.476562 C 25.1875 36.109375 33.945312 27.449219 33.945312 20.855469 C 33.945312 15.609375 29.59375 11.34375 24.246094 11.34375 Z M 24.246094 25.609375 C 21.570312 25.609375 19.394531 23.476562 19.394531 20.855469 C 19.394531 18.234375 21.570312 16.101562 24.246094 16.101562 C 26.917969 16.101562 29.09375 18.234375 29.09375 20.855469 C 29.09375 23.476562 26.917969 25.609375 24.246094 25.609375 Z M 24.246094 25.609375 " fill-opacity="1" fill-rule="nonzero"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="cartao-contato-conteudo">
+                                <span>Endereço:</span>
+                                <p>Shopping ABC - Piso 2, Loja 203A.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="palavra-da-ceo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-10 m-auto">
+                        <div class="row">
+                            <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                                <img src="assets/images/ceo.jpg" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Image">
+                            </div>
+                            <div class="col-lg-7 wow fadeInRight mt-3 mt-lg-0" data-wow-delay="0.4s">
+                                <h1 class="mb-4">Olá, sou Vanessa de Caritas proprietária da Turquesa Esmalteria & Beleza Shopping ABC!</h1>
+                                <p class="fs-5">Aqui no nosso salão, oferecemos a melhor experiência de beleza no Shopping ABC, com serviços pensados para quem busca resultados excepcionais, de forma prática e rápida, mas sem abrir mão da qualidade. Com técnicas especializadas e um ambiente acolhedor, garanto que sua visita será muito mais do que um simples atendimento — será uma experiência transformadora.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="agenda">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="btn btn-secondary btn-atendimento btn-lg w-100" type="button">
+                            <i class="bi bi-whatsapp fs-1"></i> <span class="d-none d-lg-inline">Fale Conosco Pelo Whatsapp</span><span class="d-none d-md-inline d-lg-none">Fale Pelo Whatsapp</span><span class="d-inline d-md-none">Whatsapp</span>
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-secondary btn-atendimento btn-lg w-100" type="button">
+                            <i class="bi bi-calendar3 fs-1"></i> <span class="d-none d-md-inline">Agende seu horário</span><span class="d-inline d-md-none">Agendar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contato">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-11 col-sm-10 col-md-10 col-xl-10 col-xxl-10 m-auto wow flipInX" data-wow-delay="0.4s">
+                        <form id="form-contato" class="row py-5">
+                            <div class="col-10 m-auto">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <input class="form-control form-control-lg" value="Nome Completo" id="formNome" name="nome" type="text" placeholder="Seu nome?" aria-label="Nome completo" />
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="form-control form-control-lg" value="email@gmail.com" name="email" type="email" placeholder="Seu e-mail?" aria-label="Endereço de e-mail" />
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="form-control form-control-lg" value="98999999" name="telefone" type="text" placeholder="Seu telefone/whatsapp" aria-label="Telefone de contato" />
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" name="mensagem" rows="6" style="resize: none;" >Mensagem</textarea>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn-envia-email btn btn-secondary btn-lg" type="submit">Enviar Mensagem <i class="bi bi-send-fill"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contato-base py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">Receba nossas melhores promoções em seu email!</h2>
+                    <form class="row">
+                        <div class="col-10 m-auto">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-5">
+                                    <input class="form-control form-control-lg" name="nome" type="text" placeholder="Nome" aria-label="Nome completo" />
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-5">
+                                    <input class="form-control form-control-lg" name="email" type="email" placeholder="E-mail" aria-label="Endereço de e-mail" />
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 d-grid">
+                                    <button class="btn btn-primary btn-lg" type="button">Cadastrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="rodape">
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-12 col-md-12 col-lg-3 d-flex flex-row justify-content-center align-items-center">
+                    
+                    <img src="/assets/images/logos/logo-200.webp" class="mb-5 mb-lg-0 wow fadeIn" data-wow-delay="0.2s">
+
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <h5>MAPA</h5>
+                    <ul>
+                        <li>
+                            <a href="#servicos">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="#profissionais">Profissionais</a>
+                        </li>
+                        <li>
+                            <a href="#agenda">Agendamento</a>
+                        </li>
+                        <li>
+                            <a href="#contato">Contato</a>
+                        </li>
+                        <li>
+                            <a href="#">Politica de Privacidade</a>
+                        </li>
+                        <li>
+                            <a href="#">Termos e Condições</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <h5>SERVIÇOS</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Unhas</a>
+                        </li>
+                        <li>
+                            <a href="#">Embelezamento do olhar</a>
+                        </li>
+                        <li>
+                            <a href="#">Cabelo</a>
+                        </li>
+                        <li>
+                            <a href="#">Maquiagem</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h5>ENDEREÇO</h5>
+                    <div class="d-flex flex-row justify-content-start align-items-center mb-4">
+                        <i class="bi bi-map fs-1 me-3"></i>
+                        <div>Av. Pereira Barreto, 42 - Piso 2, Loja 203A - Shopping ABC</div>
+                    </div>
+                    <h5>REDES SOCIAIS</h5>
+                    <ul class="d-flex flex-row flex-wrap">
+                        <li>
+                            <a href="#whats" rel="noopener">
+                                <i class="bi bi-whatsapp fs-3"></i>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a href="#whats" rel="noopener">
+                                <i class="bi bi-facebook fs-3"></i>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a href="#whats" rel="noopener">
+                                <i class="bi bi-instagram fs-3"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <div class="text-center">&copy; 2025 – Todo o conteúdo deste site é de uso exclusivo da Turquesa Esmalteria & Beleza Shopping ABC.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="/assets/vendor/jQuery-1.12.4/jquery.min.js"></script>  
+    <script src="/assets/vendor/bootstrap-5.3.5/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/slick-1.8/slick.min.js"></script>
+    <script src="/assets/vendor/slick-1.8/slick.min.js"></script>
+    <script src="/assets/vendor/wow-1.3.0/wow.min.js"></script>
+    <script src="/assets/scripts/main.js"></script>
+
+</body>
+</html>

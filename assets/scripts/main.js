@@ -118,6 +118,7 @@
 
       let options = {
         slidesToShow: 3,
+        autoplay: true,
         responsive: [
           {
             breakpoint: 1200,

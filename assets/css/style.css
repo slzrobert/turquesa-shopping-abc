@@ -413,21 +413,28 @@ section, .section {
 
 
 
-    .nav-link {
-        font-size: 2rem;
+    .navbar-nav .nav-link {
+        font-size: 1.125rem;
         font-weight: 400;
         color:  #ffffff;
         text-decoration: none;
         background: transparent;
+        padding: .5rem;
+        border-radius: .5rem;
+    }
+
+    .navbar-nav .nav-link:focus,
+    .navbar-nav .nav-link:hover {
+        color: #ffffff;
     }
 
     .navbar-nav .nav-link.active,
     .navbar-nav .nav-link.show {
         color: #12a0b2;
         background-color: #ffffff;
-        padding: 0 .5rem;
-        border-radius: .5rem;
     }
+
+
 
 }
 
@@ -497,7 +504,7 @@ section, .section {
         content: "";
         position: absolute;
         
-        bottom: 0px;
+        bottom: -9px;
         left: 0;
         background-color: #12a0b2;
         visibility: hidden;

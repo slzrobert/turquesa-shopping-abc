@@ -129,21 +129,6 @@
 	document.addEventListener('scroll', navmenuScrollspy);
 
 
-	window.addEventListener('load', () => {
-		
-		const headings = document.querySelectorAll('main > section');
-
-		document.addEventListener('scroll', (e) => {
-			headings.forEach(ha => {
-				const rect = ha.getBoundingClientRect();
-				if(rect.top >= 0 && rect.top < 150) {
-					const location = window.location.toString().split('#')[0];
-					history.replaceState(null, null, location + '#' + ha.id);
-				}
-			});
-		});
-	});
-
 	/**
 	* Scroll top button
 	*/
@@ -215,5 +200,25 @@
 			preloader.remove();
 		});
 	}
+
+
+	/**
+	 * Manu Hamburger
+	*/
+	const navMenuTurquesa = document.getElementById('navMenuTurquesa');
+	const btnMenu = document.querySelector('#btnNavMenuTurquesa');
+
+	if ( navMenuTurquesa &&  btnMenu){
+
+		navMenuTurquesa.addEventListener('show.bs.offcanvas', (e) => {
+			console.log('Abrindo menu');
+			btnMenu.classList.add('is-active');
+		});
+
+		navMenuTurquesa.addEventListener('hidden.bs.offcanvas', (e) => {
+			console.log('Fechou menu');
+			btnMenu.classList.remove('is-active');
+		});
+	};
 
 })(jQuery);
